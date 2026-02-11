@@ -1,0 +1,16 @@
+.env
+.venv
+.github
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.bak
+*.swp
+*.tmp
+*.DS_Store
+.idea
+.vscode
