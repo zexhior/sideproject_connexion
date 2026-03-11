@@ -1,4 +1,6 @@
 from connection import session
+from models import Connexion
+from datetime import datetime
 from pathlib import Path
     
 import socket

@@ -17,16 +17,3 @@ from sqlalchemy.orm import sessionmaker
 
 Session = sessionmaker(bind=engine)
 session = Session()
-
-from datetime import datetime
-from models import DatabaseConnectionLog
-
-try:
-  connection_log = DatabaseConnectionLog(
-    source='application',
-    connected_at=datetime.utcnow()
-  )
-  session.add(connection_log)
-  session.commit()
-except Exception:
-  session.rollback()
